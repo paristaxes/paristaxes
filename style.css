@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Nimbus Sans";
+    src: url("fonts/NimbusSanL-Reg.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nimbus Sans";
+    src: url("fonts/NimbusSanL-Bol.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: Nimbus Sans;
+    background-color: #f5f5f5;
+    color: #111;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 67%;
+    height: 89%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 10px;
+    left: 520px;
+    color: black;
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+	margin: 2px 0;
+    font-size: 0.97rem;
+}
+
+/* POSTS */
+
+.posts-section {
+    padding: 30px 40 px 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.posts-section h2 {
+    margin-bottom: 20px;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.post-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.post-card h3 {
+    margin: 15px 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* SEARCH */
+
+.search-section {
+    padding: 50px 30px;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 250px;
+}
+
+.search-section button {
+    padding: 10px 15px;
+}
+
+.site-header {
+    padding: 45px 70px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 2px;
+}
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+.posts-section h1{
+	font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+
+    /* Márgenes generales */
+    .article-body,
+    .article-header {
+        max-width: 90%;
+        margin: 40px auto;
+        transform: none; /* quitamos ajustes raros */
+    }
+
+    /* Texto más cómodo */
+    article {
+        font-size: 1rem;
+    }
+
+    /* Título */
+    article h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Grid de entradas */
+    .posts-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* una columna */
+        gap: 20px;
+    }
+
+    /* Hero texto */
+    .hero-text p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+}	

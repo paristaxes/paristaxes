@@ -1,0 +1,77 @@
+article {
+    margin: 60px auto;
+}
+
+/* Cabecera más estrecha */
+.article-header {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+/* Cuerpo más ancho */
+.article-body {
+    max-width: 1000px;
+    margin: 0px auto;
+	margin-left: 290px;
+	margin-right: auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+article h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 20px;
+	font-size: 0.93rem
+}
+
+article img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.post-meta {
+    display: flex;
+    gap: 15px; /* espacio entre autor y fecha */
+    font-size: 0.8rem;
+    opacity: 0.7;
+	color: #666;
+}
+
+@media (max-width: 768px) {
+
+    /* Márgenes generales */
+    .article-body,
+    .article-header {
+        max-width: 90%;
+        margin: 40px auto;
+        transform: none; /* quitamos ajustes raros */
+    }
+
+    /* Texto más cómodo */
+    article {
+        font-size: 1rem;
+    }
+
+    /* Título */
+    article h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Grid de entradas */
+    .posts-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* una columna */
+        gap: 20px;
+    }
+
+    /* Hero texto */
+    .hero-text p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+}
