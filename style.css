@@ -136,36 +136,8 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-
-    /* Márgenes generales */
-    .article-body,
-    .article-header {
-        max-width: 90%;
-        margin: 40px auto;
-        transform: none; /* quitamos ajustes raros */
-    }
-
-    /* Texto más cómodo */
-    article {
+    .article-body {
+        margin: 0 16px;
         font-size: 1rem;
     }
-
-    /* Título */
-    article h1 {
-        font-size: 1.6rem;
-    }
-
-    /* Grid de entradas */
-    .posts-grid {
-        display: grid;
-        grid-template-columns: 1fr; /* una columna */
-        gap: 20px;
-    }
-
-    /* Hero texto */
-    .hero-text p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-
-}	
+}
