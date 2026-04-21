@@ -35,12 +35,13 @@ body {
 }
 
 .hero-text {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    padding: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 520px;
+    color: black;
+    max-width: 500px;
 }
+
 
 .hero-text h1 {
     font-size: 3rem;
@@ -136,10 +137,14 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+	.hero {
+		height: auto;
+		
+	}
     .hero img {
-        width: 100%;
-        height: auto;
-    }
+    width: 100%;
+    height: auto;
+	}
 
     .hero-text {
         left: 16px;
