@@ -119,22 +119,7 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* SEARCH */
 
-.search-section {
-    padding: 50px 30px;
-    background-color: #eaeaea;
-    text-align: center;
-}
-
-.search-section input {
-    padding: 10px;
-    width: 250px;
-}
-
-.search-section button {
-    padding: 10px 15px;
-}
 
 /* MOBILE */
 
@@ -145,7 +130,7 @@ a:hover {
         padding: 20px 16px;
     }
 
-    /* Hero: imagen arriba, texto debajo (sin posición absoluta) */
+    /* Hero: imagen arriba, texto debajo (sin posiciĆ³n absoluta) */
     .hero {
         height: auto;
         overflow: visible;
