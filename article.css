@@ -35,7 +35,7 @@ article img {
 
 .post-meta {
     display: flex;
-    gap: 15px; /* espacio entre autor y fecha */
+    gap: 15px;
     font-size: 0.8rem;
     opacity: 0.7;
 	color: #666;
@@ -43,8 +43,12 @@ article img {
 
 @media (max-width: 768px) {
     .article-body {
-        margin: 0 16px;
+        margin: 0 16px; 				/* sobreescribe el margin-left: 215px */
         font-size: 1rem;
     }
-}
+
+    article img {
+        width: calc(100% - 32px);
+        margin: 15px 16px;
+    }
 }
