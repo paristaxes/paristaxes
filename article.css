@@ -42,13 +42,27 @@ article img {
 }
 
 @media (max-width: 768px) {
+    .article-header {
+        margin: 0 16px 40px 16px;
+        max-width: 100%;
+    }
+
     .article-body {
-        margin: 0 16px; 				/* sobreescribe el margin-left: 215px */
+        margin: 0 16px;
         font-size: 1rem;
     }
 
     article img {
         width: calc(100% - 32px);
         margin: 15px 16px;
+    }
+
+    article h1 {
+        font-size: 1.3rem;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        gap: 4px;
     }
 }
