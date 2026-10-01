@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paris, Taxes</title>
+  <link rel="icon" href="favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <style>
+    :root {
+      --bg: #fbfbfb;
+      --text: #3f3f3f;
+      --muted: #afafaf;
+      --line: #dcdcdc;
+      --strong: #2f2f2f;
+      --fs: clamp(0.75rem, 0.75rem + ((1vw - 0.2rem) * 0.313), 1rem);
+      --fs-small: clamp(0.65rem, 0.65rem + ((1vw - 0.2rem) * 0.313), 0.9rem);
+      --gap: 1.5rem;
+      --pad: 0.67rem;
+      --col: 400px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0 var(--pad);
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, sans-serif;
+      font-size: var(--fs);
+      line-height: 1.6;
+    }
+
+    a { color: var(--strong); text-decoration: none; }
+    a:hover { color: var(--muted); }
+
+    .col {
+      max-width: var(--col);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header {
+      margin-top: 5.06rem;
+      margin-bottom: var(--gap);
+      padding: var(--pad) 0;
+    }
+    .site-title { margin: 0; font-weight: 700; }
+    header hr {
+      margin: 1rem 0 0;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    main { padding: var(--pad) 0; }
+
+    .posts { list-style: none; margin: 0; padding: 0; }
+    .posts > li + li { margin-top: var(--gap); }
+
+    .post {
+      display: flex;
+      align-items: center;
+      gap: 0.67rem;
+    }
+    .post .thumb {
+      flex: none;
+      width: 42px;
+      height: 42px;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .post .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .post h2 {
+      margin: 0;
+      font-size: var(--fs);
+      font-weight: 600;
+      line-height: 1.1;
+    }
+    .post .cat {
+      margin-top: 0.2em;
+      text-transform: lowercase;
+      font-size: var(--fs-small);
+    }
+    .post .cat a { color: var(--muted); }
+
+    main hr {
+      margin: var(--gap) 0 0;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .espacio { height: 50px; }
+
+    footer {
+      padding: 2.25rem var(--pad);
+      font-size: var(--fs-small);
+    }
+    footer p { margin: 0; }
+  </style>
+</head>
+<body>
+
+  <header class="col">
+    <p class="site-title"><a href="index.html" aria-current="page">Paris, Taxes</a></p>
+    <hr>
+  </header>
+  
+  <main class="col">
+    <ul class="posts">
+      <li class="post">
+        <a class="thumb" href="2026/10/01/senales-brutales/index.html">
+          <img src="post2.jpeg" alt="">
+        </a>
+        <div>
+          <h2><a href="2026/10/01/senales-brutales/index.html">Señales Brutales, maduración y riesgo.</a></h2>
+          <div class="cat"><a href="category/musica/index.html">Música</a></div>
+        </div>
+      </li>
+    </ul>
+
+  <main class="col">
+    <ul class="posts">
+      <li class="post">
+        <a class="thumb" href="2026/09/24/donde-estariamos-hoy/index.html">
+          <img src="post1.jpg" alt="">
+        </a>
+        <div>
+          <h2><a href="2026/09/24/donde-estariamos-hoy/index.html">¿Dónde estaríamos hoy&hellip;?</a></h2>
+          <div class="cat"><a href="category/diario/index.html">Diario</a></div>
+        </div>
+      </li>
+    </ul>
+	
+
+    <hr>
+  </main>
+
+  <div class="espacio" aria-hidden="true"></div>
+
+  <footer class="col">
+    <p>22.09.26, Pl. Jussieu 75005</p>
+  </footer>
+
+</body>
+</html>
